@@ -1,17 +1,33 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>2 – Itens</title>
-  <style>body{font-family:system-ui, -apple-system, Arial, sans-serif;max-width:900px;margin:24px auto;padding:0 16px;color:#111}a{color:#0366d6}</style>
+  <style>
+    :root{--drive:#1a73e8;--icloud:#3693f3;--bg:#f7f8fb}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{display:flex;align-items:center;justify-content:center;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;color:#0b1220;padding:18px}
+    .wrap{width:100%;max-width:360px}
+    .btn{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px;border-radius:12px;color:#fff;text-decoration:none;font-weight:700;margin-bottom:12px}
+    .btn:active{transform:translateY(1px)}
+    .drive{background:linear-gradient(135deg,var(--drive),#2d8bf7)}
+    .icloud{background:linear-gradient(135deg,var(--icloud),#6fb7ff)}
+    .icon{width:18px;height:18px;display:inline-block}
+  </style>
 </head>
 <body>
-  <h1>Tag 2 — Itens</h1>
-  <ul>
-    <li>Google Drive: <a href="https://docs.google.com/document/d/11GpawRHwHaPQ8FjFXXHP3qFfSUNAJHorQ__RraRKjEM/edit?usp=drivesdk" target="_blank" rel="noopener">Abrir</a></li>
-    <li>iCloud: <a href="https://www.icloud.com/notes/021bEeeCNI63-CIP-7kO4WDaA" target="_blank" rel="noopener">Abrir</a></li>
-  </ul>
-  <p><a href="/biblioteca/">Voltar ao índice</a></p>
+  <div class="wrap" role="region" aria-label="Opções de abertura">
+    <a class="btn drive" href="https://docs.google.com/document/d/11GpawRHwHaPQ8FjFXXHP3qFfSUNAJHorQ__RraRKjEM/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 2h7l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="white" opacity="0.14"/><path d="M13 2v6h6" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 13.5h7M8.5 10.5h7" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Google Drive
+    </a>
+
+    <a class="btn icloud" href="https://www.icloud.com/notes/021bEeeCNI63-CIP-7kO4WDaA" target="_blank" rel="noopener noreferrer">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 15.5A4.5 4.5 0 0 0 15.6 11a6 6 0 0 0-11.2 1.2A3.5 3.5 0 0 0 7.5 20h12.5" fill="white" opacity="0.12"/><path d="M20 15.5A4.5 4.5 0 0 0 15.6 11a6 6 0 0 0-11.2 1.2A3.5 3.5 0 0 0 7.5 20h12.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      iCloud
+    </a>
+  </div>
 </body>
 </html>
