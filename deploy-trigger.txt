@@ -1,0 +1,4 @@
+Deploy trigger
+
+This file was added to trigger the GitHub Actions workflow for publishing the site to gh-pages.
+Timestamp: 2026-08-29T15:40:00Z
