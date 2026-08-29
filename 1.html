@@ -8,8 +8,9 @@
     :root{--drive:#1a73e8;--icloud:#3693f3;--bg:#f7f8fb}
     *{box-sizing:border-box}
     html,body{height:100%;margin:0}
-    body{display:flex;align-items:center;justify-content:center;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;color:#0b1220;padding:18px}
-    .wrap{width:100%;max-width:360px}
+    body{display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;color:#0b1220;padding:18px}
+    .wrap{width:100%;max-width:360px;text-align:center}
+    h1{margin:0 0 12px;font-size:18px;font-weight:700}
     .btn{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px;border-radius:12px;color:#fff;text-decoration:none;font-weight:700;margin-bottom:12px}
     .btn:active{transform:translateY(1px)}
     .drive{background:linear-gradient(135deg,var(--drive),#2d8bf7)}
@@ -18,12 +19,12 @@
   </style>
 </head>
 <body>
-  <div class="wrap" role="region" aria-label="Opções de abertura">
+  <div class="wrap" role="region" aria-label="1 – Itens">
+    <h1>1 — Itens</h1>
     <a class="btn drive" href="https://docs.google.com/document/d/12ZM_lw1rWxVmtuY0AC1qE_tU4-vpHc-m1KNkzeZM1JI/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer">
       <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 2h7l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="white" opacity="0.14"/><path d="M13 2v6h6" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 13.5h7M8.5 10.5h7" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       Google Drive
     </a>
-
     <a class="btn icloud" href="https://www.icloud.com/notes/031qntESyzNqftJFToBxWGnWQ" target="_blank" rel="noopener noreferrer">
       <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 15.5A4.5 4.5 0 0 0 15.6 11a6 6 0 0 0-11.2 1.2A3.5 3.5 0 0 0 7.5 20h12.5" fill="white" opacity="0.12"/><path d="M20 15.5A4.5 4.5 0 0 0 15.6 11a6 6 0 0 0-11.2 1.2A3.5 3.5 0 0 0 7.5 20h12.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       iCloud
